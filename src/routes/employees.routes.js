@@ -15,8 +15,8 @@ router.get("/employees/:id", getEmployee);
 
 router.post("/employees", createEmployees);
 
-router.put("/employees", updateEmployees);
+router.delete("/employees/:id", deleteEmployees);
 
-router.delete("/employees", deleteEmployees);
+router.patch("/employees/:id", updateEmployees);
 
 export default router;
